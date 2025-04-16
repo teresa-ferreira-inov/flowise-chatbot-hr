@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flowise Chatbot</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="chatbot" style="height: 100%;"></div>
+
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+      chatflowid: "3b1dbf5f-e473-47e3-8cf7-cd39ceb5fdeb",
+      apiHost: "http://20.93.80.75:3000",
+      theme: "light",
+      chatflowConfig: {}
+    })
+  </script>
+</body>
+</html>
